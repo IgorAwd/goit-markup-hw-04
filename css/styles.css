@@ -10,12 +10,6 @@
   box-sizing: border-box;
 }
 
-/* цвет основного текста #757575 */
-/* акцент #2196F3  */
-/* белый цвет #FFFFFF */
-/* цвет второстепенного цвета #212121 */
-/* вторичный цвет фона #F5F4FA */
-
 body {
   background-color: #ffffff;
   color: var(--primery-text-color);
@@ -143,20 +137,55 @@ h6 {
   color: var(--accent-color);
 }
 
-.svg-icon {
+.svg-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  color: var(--primery-text-color);
+  fill: currentColor;
+}
+
+.svg-mail:hover,
+.svg-mail:active {
+  fill: var(--accent-color);
+}
+
+.svg-mobile {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.svg-mobile:hover,
+.svg-mobile:active {
+  fill: var(--accent-color);
 }
 
 /* hero */
 
 .hero {
-  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
 
+  text-align: center;
   background-color: #2f303a;
   letter-spacing: 0.06em;
+}
+
+.hero-cont {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .hero-title {
@@ -210,6 +239,21 @@ h6 {
 
 .advantages-list > li {
   width: 270px;
+}
+
+.advantages-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
+.adv-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .advantages .advantages-title {
@@ -286,6 +330,11 @@ h6 {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-cont {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 .team .team-member {
   margin-top: 30px;
 
@@ -299,12 +348,37 @@ h6 {
 
 .team-text {
   margin-top: 10px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.list-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.team-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.team-box:hover {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
 }
 
 /* footer */
